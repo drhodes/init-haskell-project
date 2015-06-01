@@ -143,7 +143,7 @@ executable $project
   main-is:              Main.hs
   -- other-modules:
   -- other-extensions:
-  build-depends:        base >=4.6 && <4.7
+  build-depends:        base >=4.8
   hs-source-dirs:       src
   ghc-options:          -Wall
   default-language:     Haskell2010
@@ -154,7 +154,7 @@ library
                         , $module.Coconut
   -- other-modules:
   -- other-extensions:
-  build-depends:        base >=4.6 && <4.7
+  build-depends:        base >=4.8
   ghc-options:          -Wall
   hs-source-dirs:       src
   default-language:     Haskell2010
@@ -164,7 +164,7 @@ executable test-$project
   ghc-options:          -Wall
   main-is:              Test.hs
   default-language:     Haskell2010
-  build-depends:        base ==4.6.*, Cabal >= 1.16.0
+  build-depends:        base >=4.8, Cabal >= 1.16.0
                         , $project
                         , HUnit
                         , QuickCheck
@@ -179,7 +179,7 @@ test-suite Tests
   main-is:              Test.hs
   Type:                 exitcode-stdio-1.0
   default-language:     Haskell2010
-  build-depends:        base ==4.6.*, Cabal >= 1.16.0
+  build-depends:        base >=4.8, Cabal >= 1.16.0
                         , $project
                         , HUnit
                         , QuickCheck
